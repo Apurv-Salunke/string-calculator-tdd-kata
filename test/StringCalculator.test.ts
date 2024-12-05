@@ -24,4 +24,8 @@ describe("StringCalculator", () => {
     expect(calculator.add("1,2,3")).to.equal(6);
     expect(calculator.add("4,5,6,7")).to.equal(22);
   });
+  it("should handle new lines between numbers", () => {
+    expect(calculator.add("1\n2,3")).to.equal(6);
+    expect(calculator.add("4\n5\n6")).to.equal(15);
+  });
 });
