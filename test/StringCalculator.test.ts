@@ -15,5 +15,9 @@ describe("StringCalculator", () => {
   it("should return the number itself for a single number", () => {
     expect(calculator.add("1")).to.equal(1);
     expect(calculator.add("5")).to.equal(5);
-  })
+  });
+  it("should return the sum of two numbers separated by a comma", () => {
+    expect(calculator.add("1,2")).to.equal(3);
+    expect(calculator.add("4,5")).to.equal(9);
+  });
 });
