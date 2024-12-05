@@ -1,0 +1,24 @@
+{
+  "name": "string-calculator-tdd-kata",
+  "version": "1.0.0",
+  "description": "A String Calculator Kata implemented in TypeScript with TDD.",
+  "module": "index.ts",
+  "type": "module",
+  "main": "src/StringCalculator.ts",
+  "scripts": {
+    "build": "bun x tsc",
+    "test": "bun x ts-mocha test/**/*.test.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/chai": "^5.0.1",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^22.10.1",
+    "chai": "^5.1.2",
+    "mocha": "^11.0.1",
+    "ts-mocha": "^10.0.0",
+    "typescript": "^5.7.2"
+  },
+  "peerDependencies": {},
+  "dependencies": {}
+}
