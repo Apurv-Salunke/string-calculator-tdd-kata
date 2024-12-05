@@ -18,11 +18,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # Step 2: Install Bun
-      - name: Install Bun
-        run: |
-          curl -fsSL https://bun.sh/install | bash
-          echo "::add-path::$(bun bin)"
+      # Step 2: Setup Bun
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
 
       # Step 3: Install dependencies
       - name: Install dependencies
@@ -30,7 +28,7 @@ jobs:
 
       # Step 4: Run TypeScript compilation
       - name: Build project
-        run: bun build
+        run: bun run build
 
       # Step 5: Run tests
       - name: Run tests
