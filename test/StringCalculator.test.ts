@@ -20,4 +20,8 @@ describe("StringCalculator", () => {
     expect(calculator.add("1,2")).to.equal(3);
     expect(calculator.add("4,5")).to.equal(9);
   });
+  it("should return the sum of multiple numbers separated by commas", () => {
+    expect(calculator.add("1,2,3")).to.equal(6);
+    expect(calculator.add("4,5,6,7")).to.equal(22);
+  });
 });
